@@ -2,6 +2,7 @@ import express, { Express } from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { getS$ } from "./septa/septa";
+import { App, FBLog } from "@mchirico/fblog";
 
 import * as path from "path";
 
@@ -19,6 +20,14 @@ export const getApp = (): Express => {
   const angularDirectoryPath = path.join(__dirname, "../static/html");
 
   app.use("/", express.static(angularDirectoryPath));
+
+  app.get("/send", (_, res) => {
+    const databaseURL = "https://septapig.firebaseio.com";
+    const db = App(databaseURL).firestore();
+    const fbLog = new FBLog(db);
+    fbLog.set("fblog", { desc: "description to log", action: "activate" });
+    res.json({ ok: true });
+  });
 
   app.get("/api/v1/test", (_, res) => {
     res.json({ ok: true });
