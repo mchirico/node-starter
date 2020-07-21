@@ -17,5 +17,13 @@ npm test
 ```
 
 
+## Step for k8s
 
+```
+make
+make kind
+
+
+
+```
 
