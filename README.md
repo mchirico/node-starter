@@ -1,6 +1,6 @@
 [![codebeat badge](https://codebeat.co/badges/9395612a-da6f-480e-b008-e36732379316)](https://codebeat.co/projects/github-com-mchirico-node-starter-express)
 
-# Simple Typescrpt Node Application
+# Simple Typescript Node Application
 
 Use this template to create a Node/Express application.
 
