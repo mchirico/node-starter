@@ -1,4 +1,5 @@
 [![codebeat badge](https://codebeat.co/badges/9395612a-da6f-480e-b008-e36732379316)](https://codebeat.co/projects/github-com-mchirico-node-starter-express)
+[![codecov](https://codecov.io/gh/mchirico/node-starter/branch/fb/graph/badge.svg)](https://codecov.io/gh/mchirico/node-starter)
 
 # Simple Typescript Node Application
 
