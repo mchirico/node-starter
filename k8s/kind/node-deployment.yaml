@@ -13,7 +13,7 @@ spec:
         app: node
     spec:
       containers:
-      - name: nodee
+      - name: node
         image: gcr.io/septapig/nodestarter:dev
         imagePullPolicy: IfNotPresent
         ports:
